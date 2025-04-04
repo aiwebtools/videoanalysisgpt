@@ -64,7 +64,7 @@ const Hero = () => {
             <div className="text-sm font-mono text-cyber-text opacity-70 pt-4">
               <span className="inline-flex items-center">
                 <span className="w-1 h-1 bg-cyber-accent3 mr-2"></span>
-                Powered by OpenAI's advanced vision models
+                Harnessing the power of OpenAI's advanced vision models combined with Python frame-by-frame extraction
               </span>
             </div>
           </div>
