@@ -28,8 +28,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#faq" className="text-cyber-text hover:text-cyber-accent1 transition-colors duration-200 flex items-center group">
-                  <span className="w-1 h-1 bg-cyber-accent2 mr-2 group-hover:bg-cyber-accent1"></span> FAQ
+                <a href="#content" className="text-cyber-text hover:text-cyber-accent1 transition-colors duration-200 flex items-center group">
+                  <span className="w-1 h-1 bg-cyber-accent2 mr-2 group-hover:bg-cyber-accent1"></span> Content
                 </a>
               </li>
               <li>
