@@ -28,28 +28,28 @@ const Header = () => {
             <Button variant="ghost" className="cyber-button group" asChild>
               <a href="https://chatgpt.com/g/g-67ef3e7baf8481918c60bd6fbded49da-video-second-by-second-analysis-gpt" target="_blank" rel="noopener noreferrer">
                 <Film className="mr-2 h-4 w-4 text-cyber-accent2 group-hover:text-cyber-accent1" />
-                <span>Use Now</span>
+                <span className="text-black">Use Now</span>
               </a>
             </Button>
             
             <Button variant="ghost" className="cyber-button group" asChild>
               <a href="#faq">
                 <HelpCircle className="mr-2 h-4 w-4 text-cyber-accent2 group-hover:text-cyber-accent1" />
-                <span>FAQ</span>
+                <span className="text-black">FAQ</span>
               </a>
             </Button>
             
             <Button variant="ghost" className="cyber-button group" asChild>
               <a href="#disclaimer">
                 <FileText className="mr-2 h-4 w-4 text-cyber-accent2 group-hover:text-cyber-accent1" />
-                <span>Disclaimer</span>
+                <span className="text-black">Disclaimer</span>
               </a>
             </Button>
             
             <Button variant="ghost" className="cyber-button group" asChild>
               <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer">
                 <MoreHorizontal className="mr-2 h-4 w-4 text-cyber-accent2 group-hover:text-cyber-accent1" />
-                <span>More AI Tools</span>
+                <span className="text-black">More AI Tools</span>
               </a>
             </Button>
           </nav>

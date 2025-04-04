@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -29,7 +28,7 @@ const CyberButton = ({
       case "accent3":
         return "bg-cyber-accent3 bg-opacity-80 hover:bg-opacity-100 text-cyber-bg shadow-neon-yellow";
       default:
-        return "bg-cyber-dark text-cyber-text border-cyber-accent2 border-opacity-30";
+        return "bg-cyber-dark text-black border-cyber-accent2 border-opacity-30";
     }
   };
   
