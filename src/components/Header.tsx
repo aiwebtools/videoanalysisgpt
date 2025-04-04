@@ -33,13 +33,6 @@ const Header = () => {
             </Button>
             
             <Button variant="ghost" className="cyber-button group" asChild>
-              <a href="#content">
-                <FileText className="mr-2 h-4 w-4 text-cyber-accent2 group-hover:text-cyber-accent1" />
-                <span className="text-white">Content</span>
-              </a>
-            </Button>
-            
-            <Button variant="ghost" className="cyber-button group" asChild>
               <a href="#disclaimer">
                 <FileText className="mr-2 h-4 w-4 text-cyber-accent2 group-hover:text-cyber-accent1" />
                 <span className="text-white">Disclaimer</span>
