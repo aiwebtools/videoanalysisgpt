@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -79,6 +73,7 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+    
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -96,6 +91,193 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-cyber-bg text-cyber-text;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  /* Cyberpunk styling */
+  .cyber-border {
+    @apply border-2 border-transparent relative;
+    background-clip: padding-box;
+  }
+  
+  .cyber-border:before {
+    content: '';
+    @apply absolute inset-0 rounded-md -z-10 animate-pulse;
+    background: linear-gradient(45deg, #f732f7, #00e5ff, #ffd300);
+    margin: -2px;
+  }
+  
+  .cyber-button {
+    @apply bg-cyber-dark text-cyber-text border-0 py-2 px-6 rounded-md relative overflow-hidden transition-all duration-300;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+  }
+  
+  .cyber-button:hover {
+    @apply transform scale-105;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.8), 0 0 30px rgba(247, 50, 247, 0.4);
+  }
+  
+  .cyber-button:before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full opacity-30;
+    background: linear-gradient(45deg, rgba(247, 50, 247, 0), rgba(247, 50, 247, 0.5), rgba(247, 50, 247, 0));
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+  }
+  
+  .cyber-button:hover:before {
+    transform: translateX(100%);
+  }
+  
+  .cyberpunk-glitch {
+    position: relative;
+  }
+  
+  .cyberpunk-glitch:before, .cyberpunk-glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0b0c10;
+    opacity: 0.8;
+  }
+  
+  .cyberpunk-glitch:before {
+    left: -2px;
+    text-shadow: 2px 0 #00e5ff;
+    animation: glitch-animation 3s infinite linear alternate-reverse;
+  }
+  
+  .cyberpunk-glitch:after {
+    left: 2px;
+    text-shadow: -2px 0 #f732f7;
+    animation: glitch-animation 2s infinite linear alternate-reverse;
+  }
+  
+  @keyframes glitch-animation {
+    0% {
+      transform: none;
+      opacity: 0.8;
+    }
+    7% {
+      transform: skew(-0.5deg, -0.9deg);
+      opacity: 0.75;
+    }
+    10% {
+      transform: none;
+      opacity: 0.8;
+    }
+    27% {
+      transform: none;
+      opacity: 0.8;
+    }
+    30% {
+      transform: skew(0.8deg, -0.1deg);
+      opacity: 0.75;
+    }
+    35% {
+      transform: none;
+      opacity: 0.8;
+    }
+    52% {
+      transform: none;
+      opacity: 0.8;
+    }
+    55% {
+      transform: skew(-1deg, 0.2deg);
+      opacity: 0.75;
+    }
+    50% {
+      transform: none;
+      opacity: 0.8;
+    }
+    72% {
+      transform: none;
+      opacity: 0.8;
+    }
+    75% {
+      transform: skew(0.4deg, 1deg);
+      opacity: 0.75;
+    }
+    80% {
+      transform: none;
+      opacity: 0.8;
+    }
+    100% {
+      transform: none;
+      opacity: 0.8;
+    }
+  }
+  
+  /* Scan line effect */
+  .scan-line {
+    @apply absolute left-0 w-full h-[2px] bg-cyber-accent2 opacity-30 pointer-events-none;
+    animation: scan-line 2s linear infinite;
+  }
+  
+  @keyframes scan-line {
+    0% {
+      top: 0%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+  
+  /* Noise texture */
+  .noise-bg {
+    @apply absolute inset-0 opacity-5 pointer-events-none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+}
+
+@layer components {
+  .cyber-panel {
+    @apply bg-cyber-dark bg-opacity-80 backdrop-blur-sm border border-cyber-accent2 border-opacity-30 rounded-md overflow-hidden relative;
+  }
+  
+  .cyber-panel:before {
+    content: '';
+    @apply absolute inset-0 opacity-10;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 2px,
+      rgba(0, 229, 255, 0.5) 2px,
+      rgba(0, 229, 255, 0.5) 4px
+    );
+  }
+  
+  .testimonial-card {
+    @apply cyber-panel p-6 transition-all duration-300;
+  }
+  
+  .testimonial-card:hover {
+    @apply transform scale-[1.02] shadow-neon;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold text-cyber-accent2 mb-6 relative inline-block;
+  }
+  
+  .section-title:after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-cyber-accent1 to-cyber-accent2;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.7), 0 0 20px rgba(0, 229, 255, 0.5);
+  }
+  
+  .text-glow-pink {
+    text-shadow: 0 0 10px rgba(247, 50, 247, 0.7), 0 0 20px rgba(247, 50, 247, 0.5);
+  }
+  
+  .text-glow-yellow {
+    text-shadow: 0 0 10px rgba(255, 211, 0, 0.7), 0 0 20px rgba(255, 211, 0, 0.5);
   }
 }
