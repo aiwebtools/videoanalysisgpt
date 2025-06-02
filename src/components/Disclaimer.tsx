@@ -14,6 +14,14 @@ const Disclaimer = () => {
 
         <div className="max-w-4xl mx-auto cyber-panel p-8 font-mono text-sm">
           <div className="space-y-6">
+            <div className="bg-cyber-accent1 bg-opacity-10 p-4 rounded border border-cyber-accent1 border-opacity-30 mb-6">
+              <h3 className="text-cyber-accent1 font-bold mb-2 text-lg">Educational & Research Purposes</h3>
+              <p className="text-cyber-text opacity-90">
+                This tool is provided for informational, educational, and research purposes only. 
+                It is not intended for commercial use or critical decision-making processes.
+              </p>
+            </div>
+            
             <div>
               <h3 className="text-cyber-accent2 font-bold mb-2 text-lg">Limitation of Liability</h3>
               <p className="text-cyber-text opacity-80">
