@@ -21,7 +21,7 @@ const Hero = () => {
             <div className="inline-block bg-cyber-dark border border-cyber-accent2 border-opacity-40 px-4 py-1 rounded-full text-sm font-mono">
               <span className="flex items-center">
                 <span className="w-2 h-2 rounded-full bg-cyber-accent3 mr-2 animate-pulse"></span>
-                <span className="text-cyber-accent2">AI-Powered Video Analysis</span>
+                <span className="text-cyber-accent2">AI Web Tools - Advanced AI Video Analysis</span>
               </span>
             </div>
             
@@ -29,10 +29,12 @@ const Hero = () => {
               <span className="text-cyber-accent2 text-glow">Video Second-by-Second</span>
               <br />
               <span className="text-cyber-text">Analysis GPT</span>
+              <br />
+              <span className="text-2xl md:text-3xl lg:text-4xl text-cyber-accent1">by AI Web Tools</span>
             </h1>
             
             <p className="text-xl text-cyber-text opacity-80">
-              Break videos into one-second clips for deep visual frame by frame analysis. Perfect for fine-tuning VLM models.
+              The most advanced AI tool for video analysis. Break videos into one-second clips for deep visual frame by frame analysis. Perfect for AI researchers, developers, and fine-tuning VLM models.
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4">
@@ -41,9 +43,9 @@ const Hero = () => {
                 className="cyber-button bg-cyber-accent1 bg-opacity-80 hover:bg-opacity-100 shadow-neon-pink"
                 asChild
               >
-                <a href="https://chatgpt.com/g/g-67ef3e7baf8481918c60bd6fbded49da-video-second-by-second-analysis-gpt" target="_blank" rel="noopener noreferrer">
+                <a href="https://chatgpt.com/g/g-67ef3e7baf8481918c60bd6fbded49da-video-second-by-second-analysis-gpt" target="_blank" rel="noopener noreferrer" title="Try AI Video Analysis Tool">
                   <Play className="mr-2 h-4 w-4" />
-                  Try It Now
+                  Try AI Tool Now
                   <MoveRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
@@ -54,9 +56,9 @@ const Hero = () => {
                 className="cyber-button border-cyber-accent2 hover:border-cyber-accent2"
                 asChild
               >
-                <a href="#how-it-works">
+                <a href="#how-it-works" title="How AI Video Analysis Works">
                   <Tv className="mr-2 h-4 w-4" />
-                  How It Works
+                  How AI Tools Work
                 </a>
               </Button>
             </div>
@@ -64,7 +66,7 @@ const Hero = () => {
             <div className="text-sm font-mono text-cyber-text opacity-70 pt-4">
               <span className="inline-flex items-center">
                 <span className="w-1 h-1 bg-cyber-accent3 mr-2"></span>
-                Harnessing the power of OpenAI's advanced vision models combined with Python frame-by-frame extraction
+                Harnessing the power of OpenAI's advanced vision models combined with Python frame-by-frame extraction | AI Web Tools Platform
               </span>
             </div>
           </div>

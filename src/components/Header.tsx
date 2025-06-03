@@ -19,28 +19,28 @@ const Header = () => {
                 VIDEO SECOND-BY-SECOND ANALYSIS GPT
               </h1>
               <p className="text-xs text-cyber-text opacity-80 font-mono">
-                Presented by <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-cyber-accent1 hover:underline">AiWebTools.Ai</a>
+                Powered by <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-cyber-accent1 hover:underline" title="AI Web Tools - Leading AI Tools Platform">AI Web Tools</a> | AIWEBTOOLS.AI
               </p>
             </div>
           </div>
           
           <nav className="flex flex-wrap items-center justify-center gap-3 mt-3 md:mt-0">
             <Button variant="ghost" className="cyber-button group" asChild>
-              <a href="https://chatgpt.com/g/g-67ef3e7baf8481918c60bd6fbded49da-video-second-by-second-analysis-gpt" target="_blank" rel="noopener noreferrer">
+              <a href="https://chatgpt.com/g/g-67ef3e7baf8481918c60bd6fbded49da-video-second-by-second-analysis-gpt" target="_blank" rel="noopener noreferrer" title="Use AI Video Analysis Tool">
                 <Film className="mr-2 h-4 w-4 text-cyber-accent2 group-hover:text-cyber-accent1" />
-                <span className="text-white">Use Now</span>
+                <span className="text-white">Use AI Tool</span>
               </a>
             </Button>
             
             <Button variant="ghost" className="cyber-button group" asChild>
-              <a href="#disclaimer">
+              <a href="#disclaimer" title="AI Tools Disclaimer">
                 <FileText className="mr-2 h-4 w-4 text-cyber-accent2 group-hover:text-cyber-accent1" />
                 <span className="text-white">Disclaimer</span>
               </a>
             </Button>
             
             <Button variant="ghost" className="cyber-button group" asChild>
-              <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" title="More AI Web Tools">
                 <MoreHorizontal className="mr-2 h-4 w-4 text-cyber-accent2 group-hover:text-cyber-accent1" />
                 <span className="text-white">More AI Tools</span>
               </a>
