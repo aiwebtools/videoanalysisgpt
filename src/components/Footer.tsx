@@ -1,19 +1,18 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Film, Phone, Mail, FileText, HelpCircle } from "lucide-react";
+import { Film, Phone, Mail } from "lucide-react";
+
+const AIWEBTOOLS_URL = "https://aiwebtools.lovable.app/?via=aiwebtools";
 
 const Footer = () => {
   return (
     <footer className="bg-cyber-dark border-t border-cyber-accent2 border-opacity-30 relative overflow-hidden">
-      {/* Scan line effect */}
       <div className="scan-line"></div>
-      
-      {/* Grid pattern background */}
       <div className="absolute inset-0 bg-cyber-grid bg-[size:50px_50px] opacity-10 pointer-events-none"></div>
       
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <h3 className="text-cyber-accent2 text-xl font-bold tracking-wide text-glow mb-4">AI Web Tools Navigation</h3>
             <ul className="space-y-2">
@@ -76,7 +75,7 @@ const Footer = () => {
                 </a>
               </Button>
               <Button variant="outline" className="cyber-button group w-full" asChild>
-                <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" title="More AI Web Tools">
+                <a href={AIWEBTOOLS_URL} target="_blank" rel="noopener noreferrer" title="More AI Web Tools">
                   <span className="text-black">More AI Web Tools</span>
                 </a>
               </Button>
@@ -87,7 +86,7 @@ const Footer = () => {
                 className="absolute -top-4 -right-4 cyber-button rounded-full w-16 h-16 p-0 flex items-center justify-center hover:animate-glow shadow-neon"
                 asChild
               >
-                <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" title="AI Web Tools Platform">
+                <a href={AIWEBTOOLS_URL} target="_blank" rel="noopener noreferrer" title="AI Web Tools Platform">
                   <span className="text-xs text-black">AI Web<br/>Tools</span>
                 </a>
               </Button>
